@@ -154,7 +154,7 @@
     display: none;
   }
 
-  .mobile-nav{
+  #mobile-nav , .mobile-menu{
     display: none;
   }
 
@@ -280,7 +280,19 @@ footer{
     display: none;
   }
 
-  .mobile-nav{
+  #mobile-nav{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5em;
+    position: fixed;
+    background-color: var(--navbar-color);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+    
+  }
+
+
+  .mobile-menu{
     position: fixed;
     top: -200%;
     left: 0;
@@ -292,11 +304,11 @@ footer{
     transition: 0.4s;
   }
 
-  .mobile-nav.is-active{
+  .mobile-menu.is-active{
     top: 0;
   }
 
-  .mobile-nav a{
+  .mobile-menu a{
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -316,29 +328,30 @@ footer{
  }
 
 .hamburger{
-  position: relative;
-  display: block;
-  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  width: 4em;
   appearance: none;
   background: none;
   outline: none;
   border: none;
   cursor: pointer;
+  padding-top:1.3rem;
 }
 
 .hamburger .bar, .hamburger:after, .hamburger:before{
   content: '';
   display: block;
   width: 100%;
-  height: 0.5vh;
-  margin: 0.5vh;
+  height: 0.5em;
+  margin: 0.2em;
   background-color: white;
   transition: 0.4s;
 
 }
 
 .hamburger.is-active:before{
-    transform: translateY(5em) 
+    transform: translateY(0.9em) rotate(-45deg);
 }
 
 .hamburger.is-active .bar{
@@ -346,7 +359,45 @@ footer{
 }
 
 .hamburger.is-active:after{
-  transform: translateY(-5em) 
+  transform: translateY(-0.9em) rotate(45deg);
+}
+
+#theme-switcher{
+
+  display: flex;
+  align-items: center;
+  gap: 0.01vw;
+  cursor: pointer;
+  position:relative;
+
+}
+
+#theme-switcher::before{
+  content:'';
+  width: 28%;
+  height: 50%;
+  background-color: var(--switch-circle-bg);
+  border-radius: 1.875rem;
+  z-index: 0;
+  left: 0;
+  transform: translateX(var(--switch-circle-pos));
+  transition: var(--default-transistion);
+}
+
+#theme-switcher svg{
+  z-index: 1;
+}
+
+#sun-icon{
+  fill: var(--icon-sun);
+  width: 3vw;
+  height: 3vh;
+}
+
+#moon-icon{
+  fill: var(--icon-moon);
+  width: 3vw;
+  height: 3vh;
 }
 
 }
