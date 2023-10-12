@@ -277,8 +277,6 @@ footer{
   color:var(--secondary-text);
   text-decoration: underline;
   transition: var(--default-transistion);
-
-
 }
 
 
@@ -298,6 +296,10 @@ footer{
     box-shadow: var(--shadow);
 
     color: var(--secondary-text);
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25em;
 
   }
 
@@ -332,10 +334,21 @@ footer{
     text-decoration:none;
   }
 
-
 .theme{
+
+  background-color: #000;
   display: flex;
-  background-color: #0e103d;
+  flex-direction: column;
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-top:1.3rem;
+  margin: 3em;
+
 }
 
 .hamburger{
