@@ -91,11 +91,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     background-color: var(--navbar-color);
     transition: var(--default-transistion);
     font-size: 1.1em;
+    
   }
 
   .navbut:hover{
@@ -163,7 +164,6 @@
     display: none;
   }
 
-  
 
 }
 
