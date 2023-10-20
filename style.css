@@ -242,7 +242,7 @@ th {
 }
 
 .titel{
-  font-size: 200%;
+  font-size: 2em;
   font-family:"nasalization", "Times New Roman", Times, serif;
   text-decoration: underline;
   margin-top: 3%;
@@ -315,7 +315,7 @@ footer{
     height: 100vh;
     display: block;
     background-color: var(--bg-color);
-    padding-top: 120px;
+    padding-top: 20vh;
     transition: 0.4s;
 
   }
