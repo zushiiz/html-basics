@@ -6,19 +6,19 @@
     <meta name="viewport" content = "width = device-width">
     <meta charset="utf-8">
 
-    <script>
-      let localS = localStorage.getItem('theme')
+      <script>
+          let localS = localStorage.getItem('theme')
 
-      if (localS === 'dark'){
-          document.documentElement.setAttribute('data-theme', 'dark')
-      }
-    </script>
+          if (localS === 'dark'){
+              document.documentElement.setAttribute('data-theme', 'dark')
+          }
+      </script>
   
     <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
 
-<body>
+  <body>
   
     <nav class="navbutton">
 
@@ -48,222 +48,223 @@
       <a class="navbut" href="Webborientering.html">Webborientering</a>
       <a class="navbut" href="CSS kunskapssida.html">CSS</a>
       <a class="navbut" href="JS kunskapssida.html">JavaScript</a>
+
     </nav>
 
     <nav class="mobile-nav">
 
-    <button class="hamburger">
-      <div class="bar"></div>
-    </button>
+      <button class="hamburger">
+          <div class="bar"></div>
+      </button>
 
-    <button class="theme">
+      <button class="theme">
+        
+      </button>
       
-    </button>
-    
     </nav>
 
     <main>   
       
       <article> 
 
-      <div class="textbox">
+        <div class="textbox">
 
-      <table class="tabel">
-        <caption class="titel">Tags</caption>
+          <table class="tabel">
+            <caption class="titel">Tags</caption>
 
-        <thead>
-          
-          <tr>
-            <th>tag</th>
-            <th>despcription</th>
-            <th>parent element</th>
-          </tr>
-        </thead>        
+            <thead>
+              
+              <tr>
+                <th>tag</th>
+                <th>despcription</th>
+                <th>parent element</th>
+              </tr>
 
-        <tbody>
-          
-          <tr>
-            <td>main</td>
-            <td>specifies main content in html doc</td>
-            <td>body</td>
-          </tr>
+            </thead>        
 
-          <tr>
-            <td>article</td>
-            <td>groups tags so they are independent</td>
-            <td>body</td>
-          </tr>
+            <tbody>
+              
+              <tr>
+                <td>main</td>
+                <td>specifies main content in html doc</td>
+                <td>body</td>
+              </tr>
 
-          <tr>
-            <td>h</td>
-            <td>heading tag</td>
-            <td>body</td>
-          </tr>
+              <tr>
+                <td>article</td>
+                <td>groups tags so they are independent</td>
+                <td>body</td>
+              </tr>
 
-          <tr>
-            <td>p</td>
-            <td>element holding content /text /data</td>
-            <td>body</td>
-          </tr>
-        
-          <tr>
-            <td>pre</td>
-            <td>element with preformatted information</td>
-            <td>body</td>
-          </tr>
+              <tr>
+                <td>h</td>
+                <td>heading tag</td>
+                <td>body</td>
+              </tr>
 
-          <tr>
-            <td>section</td>
-            <td>groups different content</td>
-            <td>body</td>
-          </tr>
-
-          <tr>
-            <td>hr</td>
-            <td>lines to section content</td>
-            <td>body</td>
-          </tr>
-
-          <tr>
-            <td>abbr</td>
-            <td>used for abbreviation</td>
-            <td>p</td>
-          </tr>
-
-          <tr>
-            <td>i</td>
-            <td>used for italics</td>
-            <td>p</td>
-          </tr>
-
-          <tr>
-            <td>b</td>
-            <td>bold for visuals</td>
-            <td>p</td>
-          </tr>
-
-          <tr>
-            <td>cite</td>
-            <td>title for a book, movie, etc</td>
-            <td>p</td>
-          </tr>
-
-          <tr>
-            <td>dfn</td>
-            <td>used to define something</td>
-            <td>p</td>
-          </tr>
-          
-        </tbody>
-
-      </table>
-
-    </div>
-
-</article>
-
-<article> 
-
-  <div class="textbox">
-
-      <table class="tabel">
-        <caption class="titel">List Tags</caption>
-
-        <thead>
-          <tr>
-            <th>tag</th>
-            <th>despcription</th>
-            <th>parent element</th>
-          </tr>
-        </thead>        
-
-        <tbody>
-
-          <tr>
-            <td>li</td>
-            <td>makes lists</td>
-            <td>body</td>
-          </tr>
-
-          <tr>
-            <td>ol</td>
-            <td>ordered list</td>
-            <td>li</td>
-          </tr>
-
-          <tr>
-            <td>ul</td>
-            <td>unordered list</td>
-            <td>li</td>
-          </tr>
-
-          <tr>
-            <td>dl</td>
-            <td>description list</td>
-            <td>li</td>
-          </tr>
-
-        </tbody>
-
-      </table>
-
-      <tbody>
-
-    </div>
-
-  </article>
-
-  <article>
-
-    <div class="textbox">
-  
-
-      <table class="tabel">
-        <caption class="titel">Table Tags</caption>
-
-        <thead>
-          <tr>
-            <th>tag</th>
-            <th>despcription</th>
-            <th>parent element</th>
-          </tr>
-        </thead>       
-
-            <tr>
-              <td>table</td>
-              <td>compile and contain data, not layout</td>
-              <td>body</td>
-            </tr>
-
-            <tr>
-              <td>tr</td>
-              <td>row for the table</td>
-              <td>table</td>
-            </tr>
-
-            <tr>
-              <td>th</td>
-              <td>table header</td>
-              <td>table</td>
-            </tr>
+              <tr>
+                <td>p</td>
+                <td>element holding content /text /data</td>
+                <td>body</td>
+              </tr>
             
-            <tr>
-              <td>td</td>
-              <td>table contents</td>
-              <td>table</td>
-            </tr>
+              <tr>
+                <td>pre</td>
+                <td>element with preformatted information</td>
+                <td>body</td>
+              </tr>
 
-        </tbody>
+              <tr>
+                <td>section</td>
+                <td>groups different content</td>
+                <td>body</td>
+              </tr>
 
-      </div>
-      
+              <tr>
+                <td>hr</td>
+                <td>lines to section content</td>
+                <td>body</td>
+              </tr>
+
+              <tr>
+                <td>abbr</td>
+                <td>used for abbreviation</td>
+                <td>p</td>
+              </tr>
+
+              <tr>
+                <td>i</td>
+                <td>used for italics</td>
+                <td>p</td>
+              </tr>
+
+              <tr>
+                <td>b</td>
+                <td>bold for visuals</td>
+                <td>p</td>
+              </tr>
+
+              <tr>
+                <td>cite</td>
+                <td>title for a book, movie, etc</td>
+                <td>p</td>
+              </tr>
+
+              <tr>
+                <td>dfn</td>
+                <td>used to define something</td>
+                <td>p</td>
+              </tr>
+              
+            </tbody>
+
+          </table>
+
+        </div>
+
       </article>
 
-      </table>
+      <article> 
+
+        <div class="textbox">
+
+            <table class="tabel">
+              <caption class="titel">List Tags</caption>
+
+              <thead>
+                <tr>
+                  <th>tag</th>
+                  <th>despcription</th>
+                  <th>parent element</th>
+                </tr>
+              </thead>        
+
+              <tbody>
+
+                <tr>
+                  <td>li</td>
+                  <td>makes lists</td>
+                  <td>body</td>
+                </tr>
+
+                <tr>
+                  <td>ol</td>
+                  <td>ordered list</td>
+                  <td>li</td>
+                </tr>
+
+                <tr>
+                  <td>ul</td>
+                  <td>unordered list</td>
+                  <td>li</td>
+                </tr>
+
+                <tr>
+                  <td>dl</td>
+                  <td>description list</td>
+                  <td>li</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+            <tbody>
+
+          </div>
+
+        </article>
+
+        <article>
+
+          <div class="textbox">
+        
+            <table class="tabel">
+              <caption class="titel">Table Tags</caption>
+
+              <thead>
+                <tr>
+                  <th>tag</th>
+                  <th>despcription</th>
+                  <th>parent element</th>
+                </tr>
+              </thead>       
+
+                  <tr>
+                    <td>table</td>
+                    <td>compile and contain data, not layout</td>
+                    <td>body</td>
+                  </tr>
+
+                  <tr>
+                    <td>tr</td>
+                    <td>row for the table</td>
+                    <td>table</td>
+                  </tr>
+
+                  <tr>
+                    <td>th</td>
+                    <td>table header</td>
+                    <td>table</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>td</td>
+                    <td>table contents</td>
+                    <td>table</td>
+                  </tr>
+
+              </tbody>
+
+            </div>
+            
+            </article>
+
+            </table>
 
     </main>
 
-    <footer>
+  <footer>
 
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><p>Surprise</p></a>     
         <p>Författare: Zixuan</p>
@@ -273,6 +274,5 @@
   <script src="darkmode.js"></script> 
     
   </body>
-
 
 </html>
